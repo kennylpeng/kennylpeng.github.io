@@ -28,6 +28,8 @@ body {
     font-size: xx-large;
 }
 
+#pdfname { font-weight: bold}
+
 p {
     font-family: 'Lato', sans-serif;
 }
