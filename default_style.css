@@ -28,7 +28,9 @@ body {
     font-size: xx-large;
 }
 
-#pdfname { font-weight: bold}
+#pdfname {font-weight: bold;}
+
+#pdf {font-style: italic;}
 
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
