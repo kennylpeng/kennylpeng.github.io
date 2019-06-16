@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#container {
+    width:720px;
+    margin:0px auto;
+}
+
 #header {
     background: #fff;
     width: 100%;
