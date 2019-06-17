@@ -4,6 +4,9 @@
 // will see an error in the editor
 /* global Chart */
 
+Chart.defaults.global.defaultFontFamily = "'Lato'";
+Chart.defaults.global.defaultFontColor = 'red';
+
 // create an object with world population data
 const data = {
   'Africa': 1216,
