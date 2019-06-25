@@ -26,6 +26,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: xx-large;
+    letter-spacing: 4px;
 }
 
 #pdfname {font-weight: bold;}
