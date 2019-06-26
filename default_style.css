@@ -5,7 +5,6 @@ body {
 }
 
 #container {
-    width:720px;
     margin:0px auto;
 }
 
@@ -25,7 +24,7 @@ body {
     left: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: xx-large;
+    font-size: 2em;
     letter-spacing: 4px;
 }
 
