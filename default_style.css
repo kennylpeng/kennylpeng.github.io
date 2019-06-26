@@ -58,6 +58,11 @@ a.nav {
 }
 
 a.nav:hover{
+  font-color: #111111;
   border-bottom: 2px solid #f55856;
   text-decoration: none;
+}
+
+a.nav:visited {
+  font-color: #111111;
 }
