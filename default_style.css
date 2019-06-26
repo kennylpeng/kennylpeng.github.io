@@ -16,13 +16,14 @@ body {
     position: relative;
     top: 0;
     left: 0;
+    padding: 0 0 0 20px
 }
 
 #titlename {
     position: absolute;
     top: 0;
     left: 0;
-    font-family: 'Roboto', sans-serif;
+/*     font-family: 'Roboto', sans-serif; */
     font-weight: 600;
     font-size: 300%;
     letter-spacing: 4px;
@@ -33,7 +34,7 @@ body {
 #pdf {font-style: italic;}
 
 h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
+/*     font-family: 'Roboto', sans-serif; */
 }
 
 nav {
