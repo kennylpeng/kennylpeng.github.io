@@ -16,7 +16,7 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    padding: 0 0 0 20px
+    padding: 0 0 0 20px;
 }
 
 #titlename {
@@ -53,16 +53,16 @@ li.nav {
 }
 
 a.nav {
-    font-color: #111111;
+    color: #111111;
     text-decoration: none;
 }
 
 a.nav:hover{
-  font-color: #111111;
+  color: #111111;
   border-bottom: 2px solid #f55856;
   text-decoration: none;
 }
 
 a.nav:visited {
-  font-color: #111111;
+  color: #111111;
 }
