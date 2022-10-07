@@ -1,379 +1,56 @@
-body {
-  font-family: franklin-gothic-urw, Helvetica, Arial, sans-serif;
-  margin: 0px;
-  padding: 0px;
-  /* font-family: minion-pro, 'Times New Roman', Times, serif; */
+html, body {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  html, body {
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#profile-photo {
+  border-radius: 50%;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
   font-size: 20px;
 }
 
-h1, h2, h3, h4 {
-  font-family: franklin-gothic-urw-cond, Helvetica, Arial, sans-serif;
+a, a:visited {
+  color:#0056d6
 }
 
-h1 {
-  font-size: 60px;
+.paper {
+  padding: 20px;
 }
 
-h2 {
-  font-size: 40px;
+.paper p {
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #f15a24;
-  text-decoration: underline;
-}
-
-a:hover {
+.paper a{
   text-decoration: none;
 }
 
-.name-logo {
-  position:absolute; top:0; font-family: minion-pro, times, serif; margin: 0; padding: 0; margin-top: 10px; margin-left: 15px; font-size: 30px;
-}
-
-.name-logo a {
-  color: white;
-  text-decoration: none;
-}
-
-.name-logo a:hover {
-  text-decoration: none;
-}
-
-.orange-box {
-  background-color: #f15a24;
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  color: #1a1a1a;
-  box-shadow: 5px 10px black;
-}
-
-.white-box {
-  background-color: white;
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  color: #1a1a1a;
-  box-shadow: 5px 10px black;
-}
-
-.article-title {
-  font-family: minion-pro, 'Times New Roman', Times, serif;
-  background-color: transparent;
-}
-
-.about-content {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 20px;
-  font-weight: 100;
-  color: white;
-  /* background-color: rgb(20,20,20); */
-  background-color: #1a1a1a;
-}
-
-#info-content {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: white;
-  /* background-color: rgb(20,20,20); */
-  background-color:#f15a24;
-}
-
-#title {
-  color:white; font-family: minion-pro, times, serif; font-size: 150px; line-height: 1; margin-bottom: 0px; padding-bottom: 20px
-}
-
-#subtitle {
-  color: white; font-family: minion-pro, times, serif; font-size: 45px; line-height: 1.2; margin-top: 0px; padding-top: 0px
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.stat {
-  font-family: minion-pro, 'Times New Roman', Times, serif;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 60px;
-  display: inline-block;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.left {
-  width: 65%;
-  margin-left: 0;
-  padding-left: 0;
-  padding-right: 30px;
-}
-
-.right {
-  width: 35%;
-}
-
-.section-content {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-/* Clear floats after the columns */
-.section-content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1000px) {
-  #title-content {
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-  .section-content {
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-}
-@media screen and (max-width: 600px) {
-  #title {
-    font-size: 75px;
-  }
-  #subtitle {
-    font-size: 30px;
-  }
-  .name-logo {
-    font-size: 24px;
-  }
-}
-
-
-.custom-select {
-  position: relative;
-  font-family: franklin-gothic-urw;
-  font-weight: 600;
-}
-
-.custom-select select {
-  display: none; /*hide original SELECT element:*/
-}
-
-.select-selected {
-  background-color: white;
-}
-
-/*style the arrow inside the select element:*/
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: black transparent transparent transparent;
-}
-
-/*point the arrow upwards when the select box is open (active):*/
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent black transparent;
-  top: 7px;
-}
-
-/*style the items (options), including the selected item:*/
-.select-items div,.select-selected {
-  color: black;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  user-select: none;
-}
-
-/*style items (options):*/
-.select-items {
-  position: absolute;
-  background-color: white;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/*hide the items when the select box is closed:*/
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-
-.container{
-  clear:both;
-  overflow:auto;
-  background-color:white;
-}
-
-nav{float:right;}
-
-.logo img{float:left;}
-.logo {
-  font-family: minion-pro, 'Times New Roman', Times, serif;
-  position: absolute;
-}
-.logo p {
-  padding-top: 10px;
-  margin-top: 0px;
-  font-size: 34px;
-}
-
-ul li{
-  color: white;
-  display: inline-block; padding:10px;
-  font-size: 24px; font-weight: 600;
-}
-
-ul li:hover{
-  color: #f15a24;
-}
-
-.collapsible {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  font-weight: 700;
-  border-bottom: 2px solid black;
-}
-
-.active, .collapsible:hover {
-  background-color: rgb(235,235,235);
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: black;
+.paper-title {
   font-weight: bold;
-  float: right;
-  margin-left: 5px;
 }
 
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-
-#faq {
-  margin-top: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 30px;
-}
-
-.overline {
-  color: #f15a24;
-  font-weight: 100;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-#explorer {
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-
-
-.wrapper {
-  overflow: hidden;
-}
-
-.sliding-background {
-  background: url("background.png") repeat-x;
-  background-size: auto 100vh;
-  height: 100vh;
-  width: 12000px;
-  animation: slide 90s linear infinite;
-}
-
-@keyframes slide{
-  0%{
-    transform: translate3d(0, 0, 0);
-  }
-  100%{
-    transform: translate3d(-10000px, 0, 0);
-  }
-}
-
-.centered {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#bottom-bar {
-  position: absolute; bottom: 0; width: 100vw; border-top: 1px solid white; color: white;
-  background-color: rgb(0,0,0,0.2)
-}
-
-#bottom-bar:hover {
-  background-color: rgb(0,0,0,0.5);
-}
-
-#bottom-bar h2 {
-  font-family: franklin-gothic-urw; 
-  padding: 5px; 
-  margin: 0px; font-size: 30px; font-weight: 500
-}
-
-#bottom-bar a {
-  color: white;
-  text-decoration: none;
-}
-
-#bottom-bar a:hover {
-  text-decoration: none;
-}
-
-.margins {
-  margin-left: 10%;
-  margin-right: 10%;
+#footer {
+  padding-top: 20px;
 }

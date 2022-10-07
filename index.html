@@ -1,176 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kenny Peng</title>
+  <base target="_blank">
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
+  <img id="profile-photo" src="profile-photo.png" alt="Kenny Peng">
+  <h1>Kenny Peng</h1>
+  <p>I am a first-year computer science PhD student at Cornell. Previously, I completed my undergraduate degree in mathematics at Princeton, where I was lucky to work closely with Arvind Narayanan and Evita Nestoridi.</p>
+  <p>I am particularly interested in the societal implications of machine learning and algorithmic decision-making.</p>
+  <h2>Research</h2>
 
-<div class="wrapper">
-  <div class="sliding-background"></div>
-  <p class="name-logo"><a href="https://www.dailyprincetonian.com">THE DAILY PRINCETONIAN</a></p>
-  <div class="centered">
-  <h1 id="title"> Join the &lsquo;Prince&rsquo; </h1>
-  <h2 id="subtitle">Covering Princeton since 1876</h2>
+  <div class="paper">
+  <p class="paper-title"><a href="https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/file/077e29b11be80ab57e1a2ecabb7da330-Paper-round2.pdf">Mitigating Dataset Harms Requires Stewardship: Lessons from 1000 Papers.</a><p>
+  <p class="paper-authors"> Kenny Peng, Arunesh Mathur, Arvind Narayanan</p>
+  <p class="paper-venue">NeurIPS 2021, Track on Datasets and Benchmarks, <b>Oral Presentation</b></p>
+  <p> Covered in <a href="https://www.technologyreview.com/2021/08/13/1031836/ai-ethics-responsible-data-stewardship/">MIT Technology Review,</a> <a href="https://www.nature.com/articles/d41586-020-03187-3">Nature,</a> <a href="https://venturebeat.com/2021/08/11/ai-datasets-are-prone-to-mismanagement-study-finds/">VentureBeat</a>. Summarized in this <a href="https://twitter.com/random_walker/status/1424721594879037443">Twitter thread</a>.</p>
   </div>
-  <div id="bottom-bar"><a href="#faq"><h2 style="padding-left: 15px; font-weight: 100">The Daily Princetonian is recruiting for the upcoming year. <span style="font-weight: 700">LEARN MORE</span> <i class="fa">&#xf13a;</i></h2></a></div>
-</div>
 
-<div id="faq">
-<h1>About Us</h1>
-<p>The Daily Princetonian (the 'Prince') is dedicated to serving Princetonians past, present, and future through transparent, accurate, and empathetic reporting. In this spirit, we aim to forge connections among all those who belong to the Princeton community, no matter who or where they are.
-</p><p>
-To serve our readers, the 'Prince' seeks to build a team of student journalists who represent the diversity of experiences, backgrounds, and perspectives found at Princeton. We hope you'll join us in furthering our mission and telling the stories that shape Princeton.</p>
-<button class="collapsible">Hear from our staff about why you should join.</button>
-<div class="content">
-  <p style="position: relative; padding: 0px 0px 57% 0px; height: 0;"><iframe src="https://www.youtube.com/embed/E7MHrRWdlzs" width="100%" height="100%" frameborder="0" style="display: block; margin: 0px auto; position: absolute; top: 0; left: 0;"></iframe></p>
-</div>
-
-<h2>How to Apply</h2>
-<p>Our universal application can be found <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2FTBb4Zsz19w1DKeC73OGx5XdICxBhJLgXKCbs6PE5hFdKw/viewform">here</a>. You may select up to three sections you are interested in joining. (Explore each of our different sections <a href="#explore-teams">below</a>.) As you'll see, each section has its own supplement, which varies in length. All applications are due by 11:59 pm EDT on September 12th.</p>
-
-<h2>Open Houses</h2>
-<p>We will be holding a series of open houses before the application deadline. Each open house will include a general info session, followed by time to speak individually, or in small groups, with editors and staff of the 'Prince.' Individual sections may also hold "office hours," during which you can drop in and ask questions, or just chat. Find updated schedules here.
-</p>
-
-<p><strong>Our first open house will be 8:00 pm EDT on Wednesday, August 19th.</strong> You can join via <a href="https://princeton.zoom.us/j/96751149775">this Zoom link</a>. We hope to see you there!</p>
-
-<h2>Frequently Asked Questions</h2>
-<button class="collapsible">What is The Daily Princetonian?</button>
-<div class="content">
-  <p>That's a great question! Since 1876, The Daily Princetonian (the 'Prince') has
-  served as Princeton University's only daily student news publication. Our paper is
-  student-run, not-for-profit, and financially independent from the University.</p>
-  <p>This semester, we'll move beyond our regular print paper (though we'll still mail three special issues to all students!) and publish daily coverage across a wide
-  range of media, including our redesigned <a href="https://www.dailyprincetonian.com">website</a>, <a href="https://www.dailyprincetonian.com/page/subscribe">newsletters</a>, <a href="https://www.youtube.com/channel/UC6DZuLRHcb2Nf6bP3nna9VQ">videos</a>, and
-  <a href="https://open.spotify.com/show/503vf6NjTcdtWUClrwUNaA?si=DqRa6tXbQfi3DMe-Ko9SPA">podcasts</a>. We're also excited to launch brand-new social media and web projects
-  teams.</p>
-  <p>But the 'Prince' isn't just Princeton's publication of record. We're a <a href="https://www.dailyprincetonian.com/article/2020/08/class-of-2024-letter-from-the-editor-welcome-coronavirus-prince-vision">community</a> sustained through friendship, empathy, and dedication, both to our work and to one another. And we'd love for you to join us!</p>
-  <p>You can read more about our mission <a href="https://www.dailyprincetonian.com/page/about">here</a>.</p>
-</div>
-<button class="collapsible">What values guide the 'Prince?'</button>
-<div class="content">
-  <p>This past July, we held a town hall, where many members of our community shared what they believe the 'Prince' can and should be. Together, we identified Community, Transparency, Diversity, and Intentionality as the principles that guide our work. You can read more about each of them <a href="https://www.dailyprincetonian.com/page/about">here</a>.</p>
-  <p>We want these convictions to be more than just words; we want to bring them to life in our daily work. This semester, we'll hold a series of conversations, both formal and informal, to gain a deeper understanding of what equity and representation mean for our own newsroom, so that we can make the 'Prince' a model of inclusion, accessibility, and equity. We invite you to join us on this journey.</p>
-</div>
-<button class="collapsible">How has the 'Prince' community adapted during COVID-19?</button>
-<div class="content">
-  <p>Among campus organizations, the 'Prince' is unique, in that our community has only grown closer since the pandemic began. We talk daily with each other, both as colleagues and friends.</p>
-  <p>This semester, we can't wait to hold lots of social events, from game nights to virtual pickups, over Zoom, as we welcome you into our community.</p>
-</div>
-<button class="collapsible">How do I apply to the 'Prince?'</button>
-<div class="content">
-  <p>We're thrilled you asked! To access our universal application, click <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2FTBb4Zsz19w1DKeC73OGx5XdICxBhJLgXKCbs6PE5hFdKw/viewform">here</a>. As you'll see, each section has its own supplement, which varies in length (none of them are too long, we promise!). All applications are due by 11:59 pm EDT on Saturday, Sept. 12.</p>
-  <p>Unlike many college publications, we are proud to welcome as many new staffers as possible; our only limitation is space. The section-specific supplements allow you to share a bit about your interests, and they aren't designed to pit you against other applicants. If you demonstrate that you're interested in joining the 'Prince,' we'll do our best to find a place for you.</p>
-</div>
-<button class="collapsible">How many sections may I apply to?</button>
-<div class="content">
-  <p>You may apply to up to three sections (the application allows you to rank them preferentially). For each section you select, you'll be required to submit a separate supplement, each of which will be reviewed separately.</p>
-</div>
-<button class="collapsible">If I become an Opinion columnist, may I contribute to other sections?</button>
-<div class="content">
-  <p>With the exception of Prospect (arts and culture), Opinion columnists may not write for other sections, in keeping with principles of journalistic integrity. You may, however, apply to Opinion and other sections beyond Prospect. If you are accepted to Opinion, your other applications will be nullified.</p>
-</div>
-<button class="collapsible">To contribute to the 'Prince,' do I need previous experience?</button>
-<div class="content">
-  <p>Not at all! Previous experience is never required at the 'Prince.' Some sections may ask you whether you've written for a school newspaper or used certain kinds of software in the past. These questions give our editors a sense of who's coming on board, but they will never have any bearing on your application.
-</p>
-</div>
-<button class="collapsible">I'm taking a gap year. May I still contribute to the 'Prince?'</button>
-<div class="content">
-  <p>Regardless of whether you'll be enrolled this year, we encourage you to apply! Depending on how many new staffers are taking gap years, we may create a special team that produces content specially for students on gap years.</p>
-</div>
-<button class="collapsible">If I have any questions, who may I contact?</button>
-<div class="content">
-  <p>You're always welcome to contact Jon, our Editor-in-Chief, at <a href="eic@dailyprincetonian">eic@dailyprincetonian.com</a>. Thanks so much for your time and interest in the 'Prince!'</p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
-</div>
-<!-- end faq -->
-
-
-<div id="explore-teams" class="about-content">
-<h1> explore our teams </h1>
-<p>Applicants are more than welcome to apply to multiple sections. Some of our writers have contributed to several sections, and our various teams collaborate extensively with each other.</p>
-</div>
-<div id="select" style="text-align:center">
-  <p style="display:inline-block; font-size: 20px">Learn more about ... &ensp;</p>
-<div id="dropdown" class="custom-select" style="width:200px; display:inline-block; font-size: 20px">
-  <select id="box1">
-    <option value="0">Choose a section</option>
-    <option value="1">Copy</option>
-    <option value="9">Creative</option>
-    <option value="8">Design</option>
-    <option value="5">Features</option>
-    <option value="7">Multimedia</option>
-    <option value="2">News</option>
-    <option value="3">Opinion</option>
-    <option value="6">The Prospect</option>
-    <option value="4">Sports</option>
-    <option>
-  </select>
-</div>
-</div>
-
-
-<div id="explorer">
-  <h1 id="section-title" style="line-height:1">Choose one of the sections above to learn more.</h2>
-  <div id="section-info">
-    <div style="height:40vh"></div>
+  <div class="paper">
+  <p class="paper-title"><a href="https://arxiv.org/pdf/2112.05085.pdf">Mixing Times of One-sided <i>k</i>-transposition Shuffles.</a> 
+  <p class="paper-authors"> Evita Nestoridi and Kenny Peng</p>
+  <p class="paper-venue">Under revision at Annals of Applied Probability</p>
   </div>
-</div>
-</div>
+  
+  <h2>Miscellaneous Work / Teaching / Outreach</h2>
 
+  <ul>
+    <li>
+      I am currently a teaching assistant for <a href="https://www.cs.cornell.edu/courses/cs2850/2022fa/">CS2850: Networks</a>. (Fall 2022)
+    </li>
+    <li>
+      I helped organize a workshop titled <a href="https://sites.google.com/princeton.edu/rep-workshop">The Reproducibility Crisis in ML‑based Science</a>. The workshop was summarized in <a href="https://www.wired.com/story/machine-learning-reproducibility-crisis/">WIRED</a>. (June 2022)
+    </li>
+    <li>
+      I was an instructor at <a href="https://ai4all.princeton.edu">Princeton AI4ALL</a>, where I led a group of high school students in a project on fake news detection and associated ethical questions. (Summer 2021)
+    </li>
+    <li>
+      I was a managing editor at <a href="https://www.dailyprincetonian.com">The Daily Princetonian</a>, where I also helped found the technology and interactive design teams. (2020-2022)
+    </li>
+  </ul>
 
-<div id="empty"></div>
-
-<script src="script.js"></script>
-
+  <div id="footer">
+    <a href="https://scholar.google.com/citations?user=nNH7fwcAAAAJ&hl=en&authuser=2">Google Scholar</a> | <a href="https://twitter.com/kennylpeng">Twitter</a> | <a href="mailto: klp98@cornell.edu">Email</a>
+  </div>
 </body>
+
 </html>
