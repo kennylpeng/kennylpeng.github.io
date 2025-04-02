@@ -13,7 +13,7 @@ Papa.parse('dog_features_subset.csv', {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-          <h2>${row.interpretation}</h2>
+          <h2><a href="neuron_plots_relative/${row.neuron_idx}.png" target="_blank">${row.interpretation}</a></h2>
           <p>${examples}</p>
         `;
         grid.appendChild(card);
